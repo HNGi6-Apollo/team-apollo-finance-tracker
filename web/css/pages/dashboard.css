@@ -358,6 +358,18 @@ display: none;
 /***************************************************
 * For the Modal
 */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(17,28,45,0.5);
+}
+
 .modal-content {
 	text-align: center;
     background-color: #111C2D;
