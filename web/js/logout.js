@@ -24,6 +24,24 @@ return JSON.parse(dat);
 
 }
 
+const modal = document.querySelector('#modal-container');
+
+let logOutButton = document.querySelector('.is-logout');
+let yes = document.querySelector('.logout-yes');
+let no = document.querySelector('.logout-no');
+
+
+function displayModal() {
+	modal.style.display = 'block';
+}
+
+function hideModal() {
+	modal.style.display = 'none';
+}
+
+no.addEventListener('click', hideModal);
+
+yes.addEventListener('click', logOut);
 
 function logOut(){
 
